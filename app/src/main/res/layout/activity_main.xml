@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/title"
+        android:textColor="@color/text"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="307dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="24dp"
+        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+        android:checked="false"
+        android:gravity="center|center_horizontal"
+        android:onClick="rules"
+        android:text="@string/rules"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:onClick="onClick"
+        app:layout_constraintStart_toStartOf="@+id/checkedTextView"
+        app:layout_constraintTop_toBottomOf="@+id/checkedTextView" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_1"
+        app:layout_constraintEnd_toStartOf="@+id/tile_3"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toEndOf="@+id/tile_1"
+        app:layout_constraintTop_toTopOf="@+id/tile_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_2"
+        app:layout_constraintEnd_toStartOf="@+id/tile_4"
+        app:layout_constraintTop_toTopOf="@+id/tile_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_3"
+        app:layout_constraintEnd_toEndOf="@+id/checkedTextView"
+        app:layout_constraintTop_toTopOf="@+id/tile_3" />
+
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:onClick="onClick"
+        app:layout_constraintStart_toStartOf="@+id/tile_1"
+        app:layout_constraintTop_toBottomOf="@+id/tile_1" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_5"
+        app:layout_constraintEnd_toEndOf="@+id/tile_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tile_2"
+        app:layout_constraintTop_toTopOf="@+id/tile_5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_6"
+        app:layout_constraintEnd_toEndOf="@+id/tile_3"
+        app:layout_constraintStart_toStartOf="@+id/tile_3"
+        app:layout_constraintTop_toTopOf="@+id/tile_6" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_7"
+        app:layout_constraintEnd_toEndOf="@+id/tile_4"
+        app:layout_constraintStart_toStartOf="@+id/tile_4"
+        app:layout_constraintTop_toTopOf="@+id/tile_7" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="@+id/tile_5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tile_5"
+        app:layout_constraintTop_toBottomOf="@+id/tile_5" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_9"
+        app:layout_constraintEnd_toEndOf="@+id/tile_6"
+        app:layout_constraintStart_toStartOf="@+id/tile_6"
+        app:layout_constraintTop_toTopOf="@+id/tile_9" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_10"
+        app:layout_constraintEnd_toEndOf="@+id/tile_7"
+        app:layout_constraintStart_toStartOf="@+id/tile_7"
+        app:layout_constraintTop_toTopOf="@+id/tile_10" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_11"
+        app:layout_constraintEnd_toEndOf="@+id/tile_8"
+        app:layout_constraintStart_toStartOf="@+id/tile_8"
+        app:layout_constraintTop_toTopOf="@+id/tile_11" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_13"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="@+id/tile_9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tile_9"
+        app:layout_constraintTop_toBottomOf="@+id/tile_9" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_14"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_13"
+        app:layout_constraintEnd_toEndOf="@+id/tile_10"
+        app:layout_constraintStart_toStartOf="@+id/tile_10"
+        app:layout_constraintTop_toTopOf="@+id/tile_13" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_15"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_14"
+        app:layout_constraintEnd_toEndOf="@+id/tile_11"
+        app:layout_constraintStart_toStartOf="@+id/tile_11"
+        app:layout_constraintTop_toTopOf="@+id/tile_14" />
+
+    <com.example.colortiles.Tile
+        android:id="@+id/tile_16"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/tile_15"
+        app:layout_constraintEnd_toEndOf="@+id/tile_12"
+        app:layout_constraintStart_toStartOf="@+id/tile_12"
+        app:layout_constraintTop_toTopOf="@+id/tile_15" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

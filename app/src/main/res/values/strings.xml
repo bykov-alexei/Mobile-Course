@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ColorTiles</string>
+
+    <string name="welcome">Welcome to game show</string>
+    <string name="title">Color Tiles</string>
+    <string name="rules">Rules are:
+        You have 16 tiles, 4 in each row and column
+        When you choose one of the tiles, it\'s changing his color
+        But also, changing colors of the tiles on the same row and column
+        Your goal it\'s paint all tiles to one of the colors.
+        Good luck ;)
+    </string>
+
+</resources>
