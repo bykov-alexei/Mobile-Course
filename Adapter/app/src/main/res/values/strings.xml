@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CustomAdapterDemo</string>
+    <string name="sort">Выберите сортировку по:</string>
+
+    <string name="sex">Пол</string>
+    <string name="phone">Телефон</string>
+    <string name="name">Имя</string>
+</resources>
