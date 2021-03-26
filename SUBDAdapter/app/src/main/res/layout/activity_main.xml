@@ -13,7 +13,7 @@
         android:layout_marginTop="52dp"
         android:fontFamily="@font/philosopher"
         android:gravity="center"
-        android:onClick="showAdd"
+        android:onClick="showAddMenu"
         android:text="Добавить песню"
         android:textColor="@color/darkCoffee"
         android:textSize="30sp"

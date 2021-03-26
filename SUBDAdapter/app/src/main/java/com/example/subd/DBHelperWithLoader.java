@@ -14,12 +14,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class DBHelperWithLoader extends SQLiteOpenHelper {
-    private static String DB_NAME = "playlist.db"; // задать название БД
-    // (должно совпадать с именем файла в /assets
+    private static String DB_NAME = "playlist.db";
     private static String DB_PATH = "";
-    private static final int DB_VERSION = 20;
-    // изменить версию БД на большую, чем та, которая уже
-    // есть на устройстве (от прежнего проекта)
+    private static final int DB_VERSION = 21;
 
     private SQLiteDatabase mDataBase;
     private final Context mContext;
@@ -68,7 +65,6 @@ public class DBHelperWithLoader extends SQLiteOpenHelper {
     }
 
     private void copyDBFile() throws IOException {
-        //InputStream mInput = mContext.getAssets().open(DB_NAME);
         InputStream mInput = mContext.getResources().openRawResource(R.raw.playlist);
         OutputStream mOutput = new FileOutputStream(DB_PATH + DB_NAME);
         byte[] mBuffer = new byte[1024];
